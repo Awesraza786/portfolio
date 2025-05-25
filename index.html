@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Software Developer Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="light-mode">
+    <!-- Header -->
+
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="#home" class="navbar-brand logo text-decoration-none">
+                    <span>MD Awes Raza</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="navbar-toggler mobile-menu-btn" type="button">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <div class="collapse navbar-collapse nav-links" id="navbarContent">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#home" class="nav-link nav-item">Home</a>
+                        <a href="#skills" class="nav-link nav-item">Skills</a>
+                        <a href="#projects" class="nav-link nav-item">Projects</a>
+                        <a href="#about" class="nav-link nav-item">About</a>
+                        <a href="#contact" class="nav-link nav-item">Contact</a>
+                    </div>
+                    <div class="d-flex align-items-center ms-3">
+                        <a href="#" class="btn btn-primary me-3">Resume</a>
+                        <button id="theme-toggle" class="theme-toggle btn btn-outline-secondary"
+                            aria-label="Toggle theme">
+                            <i class="bi bi-sun"></i>
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Custom Mobile Menu -->
+            <div class="mobile-menu">
+                <nav class="navbar-nav d-flex flex-column text-start">
+                    <a href="#home" class="nav-link mobile-nav-link">Home</a>
+                    <a href="#skills" class="nav-link mobile-nav-link">Skills</a>
+                    <a href="#projects" class="nav-link mobile-nav-link">Projects</a>
+                    <a href="#about" class="nav-link mobile-nav-link">About</a>
+                    <a href="#contact" class="nav-link mobile-nav-link">Contact</a>
+                    <a href="#" class="btn btn-primary my-2">Resume</a>
+                    <div class="form-check form-switch mt-1">
+                        <input class="form-check-input float-end" type="checkbox" id="mobile-theme-toggle">
+                        <label class="form-check-label" for="mobile-theme-toggle">Dark Mode</label>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h4 class="subtitle" data-i18n="hero.profession">Hello, I'm</h4>
+                        <h1 class="title">Md Awes Raza</h1>
+                        <h2 class="profession" data-i18n="hero.profession">Software Developer</h2>
+                        <p class="description" data-i18n="hero.description">
+                            Passionate about crafting elegant solutions to complex problems. Specializing in
+                            front-end and back-end technologies with a focus on creating responsive, user-friendly
+                            applications.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-dark">Contact Me</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/awes-raza-727522320" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn" class="linkedin">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/aamir_raza78612/" target="_blank"
+                                rel="noopener noreferrer" aria-label="instagram" class="twitter">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/9153169906" target="_blank" rel="noopener noreferrer"
+                                aria-label="whatsapp" class="youtube">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="./public/images/my-pic.jpg" alt="Awes Raza portrait">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="section-subtitle">
+                        My expertise spans across front-end and back-end technologies, focusing on building robust and
+                        scalable web applications.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Development -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon frontend-icon">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h3 class="skill-title">Frontend Development</h3>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">ReactJS</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress frontend" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress frontend" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress frontend" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress frontend" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon backend-icon">
+                                <i class="bi bi-hdd-stack"></i>
+                            </div>
+                            <h3 class="skill-title">Backend Development</h3>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress backend" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress backend" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress backend" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Authentication</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress backend" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & DevOps -->
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon database-icon">
+                                <i class="bi bi-database"></i>
+                            </div>
+                            <h3 class="skill-title">Database & DevOps</h3>
+                        </div>
+
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress database" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress database" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress database" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress database" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">
+                        A collection of projects that showcase my skills and experience as a developer.
+                    </p>
+                </div>
+
+                <!-- Project Filter -->
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                    <button class="filter-btn" data-filter="typescript">TypeScript</button>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-categories="react fullstack">
+                        <div class="project-image">
+                            <img src="./public/images/school-erp.jpg" alt="School-ERP Platform">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">Node.js</span>
+                                    <span class="project-tag">MongoDB</span>
+                                </div>
+                                <p class="project-description">
+                                    An School ERP platform with Attendance management
+                                    , Student data management, and all others features.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">School-ERP Platform</h3>
+                            <p class="project-short-desc">A full-stack School-ERP solution with admin dashboard and
+                                payment integration, etc...</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Details</a>
+                                <div class="project-icons">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                        class="project-icon" aria-label="GitHub repository">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-icon"
+                                        aria-label="Live demo">
+                                        <i class="bi bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-categories="react typescript">
+                        <div class="project-image">
+                            <img src="./public/images/employee.jpg" alt="employee Dashboard App">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">TypeScript</span>
+                                    <span class="project-tag">Firebase</span>
+                                </div>
+                                <p class="project-description">
+                                    A Employee & Client Dashboard For Employee Can see the Task And complete the Task &
+                                    Client Can Assigns the Task
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Employee Dashboard</h3>
+                            <p class="project-short-desc">A React application for managing tasks with real-time
+                                collaboration features.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Details</a>
+                                <div class="project-icons">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                        class="project-icon" aria-label="GitHub repository">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-icon"
+                                        aria-label="Live demo">
+                                        <i class="bi bi-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-categories="fullstack">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+                                alt="Social Media Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-tags">
+                                    <span class="project-tag">Node.js</span>
+                                    <span class="project-tag">Express</span>
+                                    <span class="project-tag">MySQL</span>
+                                </div>
+                                <p class="project-description">
+                                    A dashboard for analyzing social media metrics and scheduling posts.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Social Media Dashboard</h3>
+                            <p class="project-short-desc">A dashboard for analytics and scheduling of social media
+                                content.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Details</a>
+                                <div class="project-icons">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                        class="project-icon" aria-label="GitHub repository">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-icon"
+                                        aria-label="Live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cta">
+                    <button class="btn btn-outline view-all">View All Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="./public/images/about-me.jpg" alt="John Doe portrait">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="about-description">
+                            I'm a <strong>fresher software developer</strong> with a strong foundation in full-stack web
+                            development, recently completed my professional training at <strong>Naresh IT</strong>.
+                            During my course, I gained hands-on experience in technologies like HTML, CSS, JavaScript,
+                            TypeScript,
+                            React, Node.js, and MongoDB & Etc...
+                        </p>
+                        <p class="about-description">
+                            I’ve also completed internships where I contributed to real-time projects, improved my
+                            problem-solving skills, and learned how to work effectively in a team environment. I'm
+                            passionate about building responsive, user-friendly web applications and eager to apply my
+                            skills in a professional setting to continue learning and growing as a developer.
+                        </p>
+                        <h3 class="about-subtitle">What I Offer</h3>
+                        <ul class="about-list">
+                            <li class="about-list-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Clean, efficient, and maintainable code</span>
+                            </li>
+                            <li class="about-list-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive, user-friendly interface design</span>
+                            </li>
+                            <li class="about-list-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Scalable architecture for growing applications</span>
+                            </li>
+                            <li class="about-list-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Attention to detail and commitment to quality</span>
+                            </li>
+                        </ul>
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                            <a href="./public/AwesRazaCv (1).pdf" target="_blank" download
+                                class="btn btn-outline">Download CV</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach
+                        out using the form below.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h3 class="contact-title">Send Me a Message</h3>
+
+                        <form id="contact-form" class="contact-form" method="POST"
+                            action="https://formsubmit.co/awesraza02786@gmail.com">
+                            <!-- Required hidden inputs -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_autoresponse"
+                                value="Thank you for contacting me! I will get back to you soon.">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject of your message"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message here..." rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+
+                    </div>
+
+                    <div class="contact-info-container">
+                        <div class="contact-info">
+                            <h3 class="contact-title">Contact Information</h3>
+
+                            <div class="contact-info-items">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4 class="contact-info-title">Email</h4>
+                                        <a href="mailto:awesraza02786@gmail.com"
+                                            class="contact-info-value">awesraza02786@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4 class="contact-info-title">Location</h4>
+                                        <p class="contact-info-value">Bokaro Stell City, Jharkhand</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-profiles">
+                            <h3 class="contact-title">Social Profiles</h3>
+
+                            <div class="social-grid">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                                    class="social-profile-item">
+                                    <i class="bi bi-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+
+                                <a href="https://linkedin.com/in/awes-raza-727522320" target="_blank"
+                                    rel="noopener noreferrer" class="social-profile-item linkedin">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+
+                                <a href="https://www.instagram.com/aamir_raza78612/" target="_blank"
+                                    rel="noopener noreferrer" class="social-profile-item twitter">
+                                    <i class="bi bi-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+
+                                <a href="https://wa.me/9153169906" target="_blank" rel="noopener noreferrer"
+                                    class="social-profile-item youtube">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <span>Whatsapp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <span class="logo">Md Awes Raza</span>
+                    <p class="footer-description">
+                        A passionate software developer specializing in modern web technologies. Currently available for
+                        full-time positions and freelance projects.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="#home" class="footer-nav-link">Home</a></li>
+                        <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+                        <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+                        <li><a href="#about" class="footer-nav-link">About</a></li>
+                        <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <a href="mailto:awesraza02786@gmail.com" class="footer-contact-link">
+                                <i class="fas fa-envelope"></i>
+                                awesraza02786@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <span class="footer-contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bokaro Stell City, Jharkhand
+                            </span>
+                        </li>
+                    </ul>
+
+                    <div class="footer-social">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-link" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/awes-raza-727522320" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-link linkedin" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/aamir_raza78612/" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-link twitter" aria-label="Twitter">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/9153169906" target="_blank" rel="noopener noreferrer"
+                            class="footer-social-link youtube" aria-label="YouTube">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year"></span> Awes Raza All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
